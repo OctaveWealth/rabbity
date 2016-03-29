@@ -1,0 +1,21 @@
+{
+  "name": "rabbitmq",
+  "version": "0.0.0",
+  "description": "Simple ampq wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/octavewealth/rabbitmq.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/octavewealth/rabbitmq/issues"
+  },
+  "homepage": "https://github.com/octavewealth/rabbitmq#readme",
+  "dependencies": {
+    "amqplib": "^0.4.1"
+  }
+}
