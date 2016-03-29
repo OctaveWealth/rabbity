@@ -1,15 +1,13 @@
-# rabbitmq client
-
 A simple wrapper for rabbitmq. Handles JSON payloads.
 
 ```js
 // config = {
-//   rxURL: 'amqp://localhost', // heroku gives us 2
+//   rxURL: 'amqp://localhost',
 //   txURL: 'amqp://localhost',
 //   url: 'amqp://localhost',
 //   logger: console // or something
 // }
-var RabbitMQ = require('rabbitmq')(config)
+var RabbitMQ = require('rabbity')(config)
 
 // options
 // * useRXURL: bool
@@ -22,7 +20,7 @@ producer.connect().then(function () {
 })
 
 // RX URL is optimized for
-var consumer = createRabbitMQ('some-channel-name', {useRXURL: true})
+var consumer = RabbitMQ('some-channel-name', {useRXURL: true})
 consumer.connect().then(function () {
   consumer.consume(function (message, json) {
     console.info('Message received:', json);

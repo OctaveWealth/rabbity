@@ -1,6 +1,3 @@
-// © 2015 QUILLU INC.
-// RabbitMQ Client
-
 'use strict'
 
 var ampq = require('amqplib')

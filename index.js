@@ -1,6 +1,3 @@
-// © 2015 QUILLU INC.
-// Redis Factory
-/* eslint camelcase: 0 */
 'use strict'
 
 var ampq = require('amqplib')
