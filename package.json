@@ -1,6 +1,6 @@
 {
   "name": "rabbity",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple amqp / rabbitmq wrapper",
   "main": "index.js",
   "scripts": {
