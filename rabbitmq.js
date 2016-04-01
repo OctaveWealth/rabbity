@@ -27,9 +27,10 @@ class RabbitMQ {
 
   setConnection (connection) { this.connection = connection }
 
-  send (data) {
+  send (data, properties) {
+    properties = Object.assign({contentType: 'application/json'}, properties)
     return new Promise((resolve, reject) => {
-      this.channel.sendToQueue(this.channelName, new Buffer(JSON.stringify(data)), {}, (err, ok) => {
+      this.channel.sendToQueue(this.channelName, new Buffer(JSON.stringify(data)), properties, (err, ok) => {
         if (err) reject(err)
         else resolve(ok)
       })
